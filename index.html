@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaCart | Modern Essentials</title>
+    <meta
+      name="description"
+      content="Shop premium home, tech, and lifestyle essentials with NovaCart."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="NovaCart home">
+          <span class="brand-mark">N</span>
+          <span>NovaCart</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#new">New Arrivals</a>
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search products">⌕</button>
+          <button class="icon-btn" aria-label="Open account">◌</button>
+          <button class="cart-btn" aria-label="Shopping cart" data-cart-toggle>
+            Cart <span id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Fresh arrivals</span>
+            <h1>Upgrade your everyday life.</h1>
+            <p>
+              Discover premium essentials designed for modern living — from
+              clean tech to cozy home upgrades and everyday style.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-btn" href="#shop">Shop now</a>
+              <a class="secondary-btn" href="#collections">Explore collections</a>
+            </div>
+
+            <ul class="hero-metrics" aria-label="Store metrics">
+              <li><strong>50k+</strong><span>happy shoppers</span></li>
+              <li><strong>4.9/5</strong><span>average rating</span></li>
+              <li><strong>24h</strong><span>fast delivery</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured product display">
+            <div class="floating-card card-main">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+                alt="Sneaker product"
+              />
+              <div class="mini-details">
+                <span>Featured pick</span>
+                <strong>Air Pulse 5</strong>
+                <em>$149</em>
+              </div>
+            </div>
+            <div class="floating-card card-badge">
+              <span>New</span>
+              <strong>Spring drop</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands container" aria-label="Featured brands">
+        <span>Featured Brands</span>
+        <div class="brand-row">
+          <span>Aster</span>
+          <span>Northline</span>
+          <span>Mono</span>
+          <span>Veloura</span>
+          <span>Horizon</span>
+        </div>
+      </section>
+
+      <section id="collections" class="container category-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Collections</span>
+            <h2>Shop by vibe</h2>
+          </div>
+          <a href="#shop">View all</a>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card category-tech">
+            <div>
+              <span>Tech</span>
+              <h3>Smart living</h3>
+            </div>
+          </article>
+          <article class="category-card category-home">
+            <div>
+              <span>Home</span>
+              <h3>Cozy essentials</h3>
+            </div>
+          </article>
+          <article class="category-card category-style">
+            <div>
+              <span>Style</span>
+              <h3>Everyday flair</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="shop" class="container shop-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Best sellers</span>
+            <h2>Trending products</h2>
+          </div>
+          <div class="filter-bar" aria-label="Product filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+            <button class="filter-btn" data-filter="home">Home</button>
+            <button class="filter-btn" data-filter="style">Style</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="promo-strip">
+        <div class="container promo-inner">
+          <div>
+            <span class="eyebrow alt">Limited offer</span>
+            <h3>Free shipping on orders over $75</h3>
+          </div>
+          <a href="#shop" class="secondary-btn dark">Redeem now</a>
+        </div>
+      </section>
+
+      <section id="reviews" class="container reviews-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Customer love</span>
+            <h2>What shoppers are saying</h2>
+          </div>
+        </div>
+
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The quality feels premium and the packaging was beautiful. It made
+              my room feel brand new.”
+            </p>
+            <div class="reviewer">
+              <strong>Amelia R.</strong>
+              <span>Verified buyer</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Fast delivery and everything looks even better in person. I’ll be
+              ordering again soon.”
+            </p>
+            <div class="reviewer">
+              <strong>Marcus T.</strong>
+              <span>Verified buyer</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The design is smart, minimal, and practical — exactly what I was
+              looking for.”
+            </p>
+            <div class="reviewer">
+              <strong>Jasmine L.</strong>
+              <span>Verified buyer</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart panel">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button class="close-cart" aria-label="Close cart" data-cart-toggle>×</button>
+      </div>
+
+      <div id="cart-items" class="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="cart-subtotal">$0.00</strong>
+        </div>
+        <button class="checkout-btn">Proceed to checkout</button>
+      </div>
+    </aside>
+
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">N</span>
+            <span>NovaCart</span>
+          </div>
+          <p>Modern essentials for the way you live.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+																																																																																																																																																																																																																																																											
